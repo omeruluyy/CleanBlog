@@ -1,5 +1,12 @@
 const express=require('express');
 const app=express();
+const ejs=require('ejs');
+
+//template engine
+app.set('view engine',"ejs");
+
+//middleware
+app.use(express.static('public'));
 
 app.get('/',(req,res)=>{
     const blog = { id: 1, title: "Blog title", description: "Blog description" }
