@@ -8,7 +8,7 @@ const Post = require('./models/Post');
 
 
 //connection
-mongoose.connect('mongodb+srv://omer:M9mbFvmRvSgN9W@mflix.pwuutu0.mongodb.net/cleanblog-test-db?retryWrites=true&w=majority').then(result=>{
+mongoose.connect('mongodb+srv://<username>:<password>@mflix.pwuutu0.mongodb.net/cleanblog-test-db?retryWrites=true&w=majority').then(result=>{
    
 })
 .catch(err=>console.log(err))
